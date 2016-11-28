@@ -7,9 +7,15 @@
   </head>
 
   <body>
+    <button class="w3-btn" onclick="document.getElementById('id01').style.display='block'">Show panel</button>
+
+<div id="id01" class="w3-panel w3-green" style="display:none">
+  <span  class="w3-closebtn" onclick="this.parentElement.style.display='none'">X</span>
   <a href="index.html">Home</a> 
   <a href="games.html">Games</a>  
 
+</div>
+  
 
 <div class="w3-main" style="margin-left:200px">
  <span class="w3-opennav w3-hide-large" onclick="w3_open()">&#9776;</span>
