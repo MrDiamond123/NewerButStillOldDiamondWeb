@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
     
-    <link rel="stylesheet" href="styles/w3css.css">
+    
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>DiamondCoderMan Web</title>
         
     </head>
     
-    <body class="w3-indigo">
-        <div class="w3-container w3-cyan"><h1>Welcome DiamondCoderWeb!</h1></div>
-          <div class="w3-dropdown-hover">
-  <button class="w3-btn w3-red">Menu</button>
-  <div class="w3-dropdown-content w3-border">
-  <a class="w3-btn w3-aqua w3-hover-blue fa fa-diamond" href="index.html">Home</a> 
-  <a class="w3-btn w3-aqua  w3-hover-blue fa fa-gamepad" href="games.html">Games</a>   
-    </div>
+    <body >
+        <div class="container-fluid"><h1>Welcome DiamondCoderWeb!</h1></div>
+  <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" 
+          data-toggle="dropdown">Menu <span class="caret"></span> </button>
+  <ul class="dropdown-menu">
+      <li><a class="fa fa-diamond" href="index.html">Home</a></li> 
+      <li><a class="fa fa-gamepad" href="games.html">Games</a></li>   
+    </ul>
 </div>
         <div>
-            <a class="w3-btn" href="howto_website.html"><i class="fa fa-code"></i>How to Code a Website!</a>
+            <a class="btn-default" href="howto_website.html"> <i class="fa fa-code"></i> How to Code a Website!</a>
         </div>
-        <div class="w3-container w3-cyan">
-        <img class="slides" src="assets/flyingcatvsdogicon.png">
         
-        <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-<a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
+        <div class="container">
+        
+       <ul class="pager">
+        <a class="btn btn-primary " onclick="plusDivs(-1)">&#10094;</a>
+        <img class="slides" src="assets/flyingcatvsdogicon.png">
+<a class="btn btn-primary" onclick="plusDivs(+1)">&#10095;</a>
         
         <script>
             var slideIndex = 1;
@@ -48,6 +61,8 @@ function showDivs(n) {
 
         </script>        
         </div>
+            
+          
     </body>
     
 </html>
