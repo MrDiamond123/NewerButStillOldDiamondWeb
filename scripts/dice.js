@@ -1,14 +1,29 @@
  var dice_value;
  function dice_cycle() {
-  setTimeout(document.getElementById('dice').src='assets/Dice6.png';, 500);
-  setTimeout(document.getElementById('dice').src='assets/Dice5.png';, 500);
-  setTimeout(document.getElementById('dice').src='assets/Dice4.png';, 500);
-  setTimeout(document.getElementById('dice').src='assets/Dice3.png';, 500);
-  setTimeout(document.getElementById('dice').src='assets/Dice2.png';, 500);
-  setTimeout(document.getElementById('dice').src='assets/Dice1.png';, 500);
+  setTimeout(
+   document.getElementById('dice').src='assets/Dice6.png';
+   , 500);
+  setTimeout(
+   document.getElementById('dice').src='assets/Dice5.png';
+   , 500);
+  setTimeout(
+   document.getElementById('dice').src='assets/Dice4.png';
+   , 500);
+  setTimeout(
+   document.getElementById('dice').src='assets/Dice3.png';
+   , 500);
+  setTimeout(
+   document.getElementById('dice').src='assets/Dice2.png';
+   , 500);
+  setTimeout(
+   document.getElementById('dice').src='assets/Dice1.png';
+   , 500);
   
   
  }
+
+
+
 
 
   function roll_dice() {
