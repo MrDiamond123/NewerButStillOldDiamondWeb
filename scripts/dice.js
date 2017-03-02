@@ -18,18 +18,23 @@ function set_Dice(diceValue) {
 
  function cycle_Dice() {
   setTimeout(
-     set_Dice(6), 500);
+     set_Dice(6), 600);
+    )
   setTimeout(
      set_Dice(5), 500);
+    )
   setTimeout(
-     set_Dice(4), 500);
+     set_Dice(4), 400);
+    )
   setTimeout(
-     set_Dice(3), 500);
+     set_Dice(3), 300);
+    )
   setTimeout(
-     set_Dice(2), 500);
+     set_Dice(2), 200);
+    )
   setTimeout(
-     set_Dice(1), 500);
-  
+     set_Dice(1), 100);
+  )
   
  }
 
@@ -38,7 +43,8 @@ function set_Dice(diceValue) {
 
   function roll_Dice() {
     dice_value = Math.floor(Math.random() * 6) + 1;     // returns a number between 1 and 6
-            if (dice_value == 1) {
+            
+     setTimeout (if (dice_value == 1) {
         document.getElementById('dice').src='assets/Dice1.png';
      } else if (dice_value == 2) {
         document.getElementById('dice').src='assets/Dice2.png';
@@ -51,7 +57,7 @@ function set_Dice(diceValue) {
      } else if (dice_value == 6) {
         document.getElementById('dice').src='assets/Dice6.png';
      }
-   
+   ), 2100);
    cycle_Dice();
     
   }
