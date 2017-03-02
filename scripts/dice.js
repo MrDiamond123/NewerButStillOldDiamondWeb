@@ -1,32 +1,48 @@
- var dice_value;
- function dice_cycle() {
+var dice_value;
+function set_Dice(diceValue) {
+   if (diceValue == 1) {
+        document.getElementById('dice').src='assets/Dice1.png';
+     } else if (diceValue == 2) {
+        document.getElementById('dice').src='assets/Dice2.png';
+     } else if (diceValue == 3) {
+        document.getElementById('dice').src='assets/Dice3.png';
+     } else if (diceValue == 4) {
+        document.getElementById('dice').src='assets/Dice4.png';
+     } else if (diceValue == 5) {
+        document.getElementById('dice').src='assets/Dice5.png';
+     } else if (diceValue == 6) {
+        document.getElementById('dice').src='assets/Dice6.png';
+     }
+   
+ }
+
+ function cycle_Dice() {
   setTimeout(
-   document.getElementById('dice').src='assets/Dice6.png';
+     set_Dice(6);
    , 500);
   setTimeout(
-   document.getElementById('dice').src='assets/Dice5.png';
+     set_Dice(5);
    , 500);
   setTimeout(
-   document.getElementById('dice').src='assets/Dice4.png';
+     set_Dice(4);
    , 500);
   setTimeout(
-   document.getElementById('dice').src='assets/Dice3.png';
+     set_Dice(3);
    , 500);
   setTimeout(
-   document.getElementById('dice').src='assets/Dice2.png';
+     set_Dice(2);
    , 500);
   setTimeout(
-   document.getElementById('dice').src='assets/Dice1.png';
+     set_Dice(1);
    , 500);
   
   
  }
 
+ 
 
 
-
-
-  function roll_dice() {
+  function roll_Dice() {
     dice_value = Math.floor(Math.random() * 6) + 1;     // returns a number between 1 and 6
             if (dice_value == 1) {
         document.getElementById('dice').src='assets/Dice1.png';
@@ -42,6 +58,6 @@
         document.getElementById('dice').src='assets/Dice6.png';
      }
    
-   dice_cycle();
+   cycle_Dice();
     
   }
