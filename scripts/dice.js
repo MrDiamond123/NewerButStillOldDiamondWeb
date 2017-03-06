@@ -18,22 +18,22 @@ function set_Dice(diceValue) {
 
  function cycle_Dice() {
   setTimeout(
-     set_Dice(6), 600);
+     set_Dice(6), 60);
     
   setTimeout(
-     set_Dice(5), 500);
+     set_Dice(5), 50);
     
   setTimeout(
-     set_Dice(4), 400);
+     set_Dice(4), 40);
     
   setTimeout(
-     set_Dice(3), 300);
+     set_Dice(3), 30);
     
   setTimeout(
-     set_Dice(2), 200);
+     set_Dice(2), 20);
     
- 
-     set_Dice(1);
+   setTimeout (
+     set_Dice(1), 10);
   
   
  }
