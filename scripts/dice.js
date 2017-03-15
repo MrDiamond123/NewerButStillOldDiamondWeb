@@ -33,7 +33,7 @@ function set_Dice(diceValue) {
     
   setTimeout (set_Dice(2), 20);
     
-  setTimeout (set_Dice(1), 10);
+  set_Dice(1);
   
   
  }
