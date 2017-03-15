@@ -2,16 +2,22 @@ var dice_value;
 function set_Dice(diceValue) {
    if (diceValue == 1) {
         document.getElementById('dice').src='assets/Dice1.png';
+        console.log("1");
      } else if (diceValue == 2) {
         document.getElementById('dice').src='assets/Dice2.png';
+        console.log("2");
      } else if (diceValue == 3) {
         document.getElementById('dice').src='assets/Dice3.png';
+        console.log("3");
      } else if (diceValue == 4) {
         document.getElementById('dice').src='assets/Dice4.png';
+        console.log("4");
      } else if (diceValue == 5) {
         document.getElementById('dice').src='assets/Dice5.png';
+        console.log("5");
      } else if (diceValue == 6) {
         document.getElementById('dice').src='assets/Dice6.png';
+        console.log("6");
      }
    
  }
@@ -35,16 +41,22 @@ function set_Dice(diceValue) {
  function check_Dice() {
      if (dice_value == 1) {
         document.getElementById('dice').src='assets/Dice1.png';
+        console.log("1");
      } else if (dice_value == 2) {
         document.getElementById('dice').src='assets/Dice2.png';
+        console.log("2");
      } else if (dice_value == 3) {
         document.getElementById('dice').src='assets/Dice3.png';
+        console.log("3");
      } else if (dice_value == 4) {
         document.getElementById('dice').src='assets/Dice4.png';
+        console.log("4");
      } else if (dice_value == 5) {
         document.getElementById('dice').src='assets/Dice5.png';
+        console.log("5");
      } else if (dice_value == 6) {
         document.getElementById('dice').src='assets/Dice6.png';
+        console.log("6");
      }
    
     
