@@ -21,23 +21,6 @@ function set_Dice(diceValue) {
      }
    
  }
-
- function cycle_Dice() {
-  setTimeout (set_Dice(6), 6000);
-    
-  setTimeout (set_Dice(5), 5000);
-    
-  setTimeout (set_Dice(4), 4000);
-    
-  setTimeout (set_Dice(3), 3000);
-    
-  setTimeout (set_Dice(2), 2000);
-    
-  set_Dice(1);
-  
-  
- }
-
  function check_Dice() {
      if (dice_value == 1) {
         document.getElementById('dice').src='assets/Dice1.png';
@@ -62,10 +45,31 @@ function set_Dice(diceValue) {
     
  }
 
+ function cycle_Dice() {
+  setTimeout (check_Dice(), 7000);
+    
+  setTimeout (set_Dice(6), 6000);
+    
+  setTimeout (set_Dice(5), 5000);
+    
+  setTimeout (set_Dice(4), 4000);
+    
+  setTimeout (set_Dice(3), 3000);
+    
+  setTimeout (set_Dice(2), 2000);
+    
+  set_Dice(1);
+  
+  
+ }
+
+
+
 
   function roll_Dice() {
    dice_value = Math.floor(Math.random() * 6) + 1;     // returns a number between 1 and 6
    cycle_Dice();
-   check_Dice();
+     
+   
 
   }
