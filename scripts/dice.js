@@ -53,7 +53,7 @@ function set_Dice(diceValue) {
 
   function roll_Dice() {
    dice_value = Math.floor(Math.random() * 6) + 1;     // returns a number between 1 and 6
-   cycle_Dice();
    setTimeout( check_Dice(), 700);
+   cycle_Dice();
     
   }
