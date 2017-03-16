@@ -48,15 +48,15 @@ function set_Dice(diceValue) {
  function cycle_Dice() {
  
     
-  setTimeout (set_Dice(6), 1000);
+  setTimeout (set_Dice(6), 900);
     
-  setTimeout (set_Dice(5), 1000);
+  setTimeout (set_Dice(5), 800);
     
-  setTimeout (set_Dice(4), 1000);
+  setTimeout (set_Dice(4), 700);
     
-  setTimeout (set_Dice(3), 1000);
+  setTimeout (set_Dice(3), 600);
     
-  setTimeout (set_Dice(2), 1000);
+  setTimeout (set_Dice(2), 500);
     
   set_Dice(1);
   
@@ -68,7 +68,7 @@ function set_Dice(diceValue) {
 
   function roll_Dice() {
    dice_value = Math.floor(Math.random() * 6) + 1;     // returns a number between 1 and 6
-   setTimeout (check_Dice(), 7000);
+   setTimeout (check_Dice(), 1000);
    cycle_Dice();
      
    
