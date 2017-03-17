@@ -38,8 +38,48 @@
   </div>
 </nav>
     
-    
-
+    <button onclick="eatpizza();"><img src="assets/pizza0.png" id="pizza"/></button>
+    <script>
+      var pizza = 0;
+      var thePizza = document.getElementById('pizza');
+      function eatpizza() {
+        if (pizza = 0) {
+          thePizza.src='assets/pizza1.png';
+          pizza = 1;
+        }
+       else 
+         if(pizza = 1) {
+         thePizza.src='assets/pizza2.png';
+          pizza = 2;
+       }
+        else
+         if (pizza = 2) {
+          thePizza.src='assets/pizza3.png';
+          pizza = 3;
+        }
+       else 
+            if (pizza = 3) {
+          thePizza.src='assets/pizza4.png';
+          pizza = 4;
+        }
+       else 
+           if (pizza = 4) {
+          thePizza.src='assets/pizza5.png';
+          pizza = 5;
+        }
+       else 
+                 if (pizza = 5) {
+          thePizza.src='assets/pizza6.png';
+          pizza = 6;
+        }
+       else 
+                 if (pizza = 6) {
+          
+          
+        }
+       
+      }
+    </script>
 
     
   </body>
