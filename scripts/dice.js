@@ -50,17 +50,22 @@ function set_Dice(diceValue) {
  
     
   setTimeout (set_Dice(6), 900);
-    
+  console.log("CYCLED DICE 6");
   setTimeout (set_Dice(5), 800);
-    
+  console.log("CYCLED DICE 5");
+
   setTimeout (set_Dice(4), 700);
-    
+  console.log("CYCLED DICE 4");
+
   setTimeout (set_Dice(3), 600);
-    
+  console.log("CYCLED DICE 3");
+
   setTimeout (set_Dice(2), 500);
-    
+  console.log("CYCLED DICE 2");
+
   set_Dice(1);
-  
+  console.log("CYCLED DICE 1");
+
   
  }
 
