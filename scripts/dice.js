@@ -69,8 +69,7 @@ function set_Dice(diceValue) {
 
   function roll_Dice() {
    
-   setTimeout(check_Dice(), 1000);
-   cycle_Dice();
+   check_Dice();
    
    
      
