@@ -2,6 +2,7 @@ var dice1; //1st Dice Value
 var dice2; //2nd Dice Value
 var problem; 
 var answer;
+var userAnswer;
 
 var display1 = document.getElementById('dice1');
 var display2 = document.getElementById('dice2');
@@ -104,6 +105,11 @@ function setProblem() {
   if (getAnswer(dice1, dice2, problem) < 1) {
     setProblem(); 
   } else displayProblem();
+}
+
+function isUserRight() {
+    userAnswer = prompt("What is " + );   
+    
 }
 
 
