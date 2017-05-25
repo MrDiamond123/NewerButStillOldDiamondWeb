@@ -31,64 +31,64 @@ function getAnswer(dice1, dice2, problem) {
 function displayProblem() {
     //Dice1 Display Code
     if (dice1 = 1) {
-      display1.src(""); 
+      display1.src("assets/Dice1.svg"); 
     }
     
     if (dice1 = 2) {
-      display1.src(""); 
+      display1.src("assets/Dice2.svg"); 
     }
   
     if (dice1 = 3) {
-      display1.src(""); 
+      display1.src("assets/Dice3.svg"); 
     }
   
     if (dice1 = 4) {
-      display1.src(""); 
+      display1.src("assets/Dice4.svg"); 
     }
   
     if (dice1 = 5) {
-      display1.src(""); 
+      display1.src("assets/Dice5.svg"); 
     }
   
     if (dice1 = 6) {
-      display1.src(""); 
+      display1.src("assets/Dice6.svg"); 
     }
     //Dice2 Display Code
     if (dice2 = 1) {
-      display2.src(""); 
+      display2.src("assets/Dice1.svg"); 
     }
     
     if (dice2 = 2) {
-      display2.src(""); 
+      display2.src("assets/Dice2.svg"); 
     }
   
     if (dice2 = 3) {
-      display2.src(""); 
+      display2.src("assets/Dice3.svg"); 
     }
   
     if (dice2 = 4) {
-      display2.src(""); 
+      display2.src("assets/Dice4.svg"); 
     }
   
     if (dice2 = 5) {
-      display2.src(""); 
+      display2.src("assets/Dice5.svg"); 
     }
   
     if (dice2 = 6) {
-      display2.src(""); 
+      display2.src("assets/Dice6.svg"); 
     }
     //Operator Display Code
     if (problem = 1) {
-      display3.src("");
+      display3.src("assets/Opt1.svg");
     }
     if (problem = 2) {
-      display3.src("");
+      display3.src("assets/Opt2.svg");
     }
     if (problem = 3) {
-      display3.src("");
+      display3.src("assets/Opt3.svg");
     }
     if (problem = 4) {
-      display3.src("");      
+      display3.src("assets/Opt4.svg");      
     }
     
    
