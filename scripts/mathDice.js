@@ -29,25 +29,72 @@ function getAnswer(dice1, dice2, problem) {
 }
 
 function displayProblem() {
-    if (problem = 1) {
-      
-      
+    //Dice1 Display Code
+    if (dice1 = 1) {
+      display1.src(""); 
     }
-    if (problem = 2) {
-      answer = dice1 - dice2;
-      
-    }
-    if (problem = 3) {
-      answer = dice1 / dice2;
-    }
-    if (problem = 4) {
-      answer = dice1 * dice2;
-      
+    
+    if (dice1 = 2) {
+      display1.src(""); 
     }
   
+    if (dice1 = 3) {
+      display1.src(""); 
+    }
+  
+    if (dice1 = 4) {
+      display1.src(""); 
+    }
+  
+    if (dice1 = 5) {
+      display1.src(""); 
+    }
+  
+    if (dice1 = 6) {
+      display1.src(""); 
+    }
+    //Dice2 Display Code
+    if (dice2 = 1) {
+      display2.src(""); 
+    }
+    
+    if (dice2 = 2) {
+      display2.src(""); 
+    }
+  
+    if (dice2 = 3) {
+      display2.src(""); 
+    }
+  
+    if (dice2 = 4) {
+      display2.src(""); 
+    }
+  
+    if (dice2 = 5) {
+      display2.src(""); 
+    }
+  
+    if (dice2 = 6) {
+      display2.src(""); 
+    }
+    //Operator Display Code
+    if (problem = 1) {
+      display3.src("");
+    }
+    if (problem = 2) {
+      display3.src("");
+    }
+    if (problem = 3) {
+      display3.src("");
+    }
+    if (problem = 4) {
+      display3.src("");      
+    }
+    
+   
+  
+  
 }  
-
-
 
 
 function setProblem() {
