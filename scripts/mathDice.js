@@ -108,8 +108,9 @@ function setProblem() {
 }
 
 function isUserRight() {
-    userAnswer = prompt("What is " + );   
-    
+    if (userAnswer = answer) {
+        alert("You got it right!"); setProblem();
+    } else {alert("You will do good next time!"); setProblem(); }
 }
 
 
