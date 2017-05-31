@@ -7,13 +7,22 @@
   
   <body>
   <div>
+    <input type="text" placeholder="Type your answer here and hit enter" class="input" onkeydown="search(this)"/>  
     <button type=button onclick="roll_dice();" style="text-align: center;">Roll the Dice!</button>
-    
+    <br>
     <img src="" id="dice1" height="128px" width="128px" style="text-align: center;"/>
     <img src="" id="dice1" height="128px" width="128px" style="text-align: center;"/>
     <img src="" id="operation" height="128px" width="128px" style="text-align: center;"/>
     <br>
     <script src="scripts/mathDice.js"></script>
+    <script> 
+    function search(ele) {
+    if(event.keyCode == 13) {
+      userAnswer = ele;  
+      isUserRight(); 
+    }
+}
+    </script>
   </div> 
   </body>
 </html>
