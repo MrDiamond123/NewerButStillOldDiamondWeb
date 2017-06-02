@@ -4,9 +4,9 @@ var problem;
 var answer;
 var userAnswer;
 
-var display1 = document.getElementById('dice1').innerHTML;
-var display2 = document.getElementById('dice2').innerHTML;
-var display3 = document.getElementById('operation').innerHTML;
+var display1 = document.getElementById('dice1').innerHTML();
+var display2 = document.getElementById('dice2').innerHTML();
+var display3 = document.getElementById('operation').innerHTML();
 
 
 function getAnswer(dice1, dice2, problem) {
@@ -109,8 +109,12 @@ function setProblem() {
 
 function isUserRight() {
     if (userAnswer = answer) {
-        alert("You got it right!"); setProblem();
-    } else {alert("You will do good next time!"); setProblem(); }
+        alert("You got it right!"); 
+        setProblem();
+    } else {  
+        alert("You will do good next time!"); 
+        setProblem(); 
+    }
 }
 
 
