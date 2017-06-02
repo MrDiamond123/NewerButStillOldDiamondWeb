@@ -4,9 +4,9 @@ var problem;
 var answer;
 var userAnswer;
 
-var display1 = document.getElementById('dice1').innerHTML();
-var display2 = document.getElementById('dice2').innerHTML();
-var display3 = document.getElementById('operation').innerHTML();
+var display1 = document.getElementById('dice1');
+var display2 = document.getElementById('dice2');
+var display3 = document.getElementById('operation');
 
 
 function getAnswer(dice1, dice2, problem) {
