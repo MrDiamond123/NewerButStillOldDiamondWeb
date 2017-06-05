@@ -92,7 +92,7 @@ function displayProblem() {
       display3.src = "assets/Divide.svg";      
     }
     
-   
+   return 0;
   
   
 }  
@@ -101,19 +101,20 @@ function displayProblem() {
 function setProblem() {
   dice1 = Math.floor(Math.random() * 6) + 1;
   dice2 = Math.floor(Math.random() * 6) + 1;
-  problem = Math.floor(Math.random() * 3) + 1 ;
-  if (getAnswer(dice1, dice2, problem) < 1) {
-    setProblem(); 
-  } else displayProblem();
+  problem = Math.floor(Math.random() * 3) + 1;
+  displayProblem();
+  return 0;
 }
 
 function isUserRight() {
     if (userAnswer = answer) {
         alert("You got it right!"); 
         setProblem();
+        return 0;
     } else {  
         alert("You will do good next time!"); 
-        setProblem(); 
+        setProblem();
+        return 1;
     }
 }
 
