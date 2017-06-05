@@ -19,11 +19,11 @@ function getAnswer(dice1, dice2, problem) {
       return answer;
     }
     if (problem = 3) {
-      answer = dice1 / dice2;
+      answer = dice1 * dice2;
       return answer;
     }
     if (problem = 4) {
-      answer = dice1 * dice2;
+      answer = dice1 / dice2;
       return answer;
     }
   
