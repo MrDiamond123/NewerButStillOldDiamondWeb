@@ -80,16 +80,16 @@ function displayProblem() {
     }
     //Operator Display Code
     if (problem = 1) {
-      display3.src = "assets/Opt1.svg";
+      display3.src = "assets/Plus.svg";
     }
     if (problem = 2) {
-      display3.src = "assets/Opt2.svg";
+      display3.src = "assets/Minus.svg";
     }
     if (problem = 3) {
-      display3.src = "assets/Opt3.svg";
+      display3.src = "assets/Times.svg";
     }
     if (problem = 4) {
-      display3.src = "assets/Opt4.svg";      
+      display3.src = "assets/Divide.svg";      
     }
     
    
