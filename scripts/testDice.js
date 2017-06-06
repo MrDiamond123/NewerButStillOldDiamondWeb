@@ -6,6 +6,19 @@ var userAnswer;
 var readableProblem;
 
 
+function getReadableProblem(problemA) {
+   if (problemA = 1) {
+    return "+"   
+ } else if (problemA = 2) {
+    return "-" 
+ } else if (problemA = 3) {
+    return "*"
+ } else if (problemA = 4) {
+    return "/" 
+ }
+}
+
+
 function getAnswer(dice1, dice2, problem) {
     if (problem = 1) {
       answer = dice1 + dice2;
@@ -33,37 +46,22 @@ function setProblem() {
   return 0;
 }
 
-function isUserRight() {
-    if (userAnswer = answer) {
-        alert("You got it right!"); 
-        setProblem();
-        return 0;
-    } else {  
-        alert("You will do good next time!"); 
-        setProblem();
-        return 1;
-    }
-}
-
-function getReadableProblem(problemA) {
-   if (problemA = 1) {
-    return "+"   
- } else if (problemA = 2) {
-    return "-" 
- } else if (problemA = 3) {
-    return "*"
- } else if (problemA = 4) {
-    return "/" 
- }
-}
-
 function askProblem() {
     userAnswer = prompt("What is" + dice1 + getReadableProblem(problem) + dice2 + "?");
     if (userAnswer = answer) {
         alert("Good Job!");
         setProblem();
+        return 0;
     } else {
       alert("You will get it next time!");
       setProblem();
+      return 1;
     }
 }    
+
+
+function doAllThings() {
+  setProblem();
+  askProblem():
+    
+}
