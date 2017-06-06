@@ -7,23 +7,8 @@
   
   <body>
   <div>
-    <input type="text" placeholder="Type your answer here and hit enter" class="input" onkeydown="search(this)"/>  
-    <br>
-    <img src="" id="dice1" height="128px" width="128px" style="text-align: center;"/>
-    <img src="" id="operation" height="128px" width="128px" style="text-align: center;"/>
-    <img src="" id="dice2" height="128px" width="128px" style="text-align: center;"/>
-    <br>
-    
     <script src="scripts/testDice.js"></script>
     <script>setProblem();</script>
-    <script> 
-    function search(ele) {
-    if(event.keyCode == 13) {
-      userAnswer = ele;  
-      isUserRight(); 
-    }
-}
-    </script>
   </div> 
   </body>
 </html>
