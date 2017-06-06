@@ -60,6 +60,10 @@ function getReadableProblem(problemA) {
 function askProblem() {
     userAnswer = prompt("What is" + dice1 + getReadableProblem(problem) + dice2 + "?");
     if (userAnswer = answer) {
-        
-    } else 
+        alert("Good Job!");
+        setProblem();
+    } else {
+      alert("You will get it next time!");
+      setProblem();
+    }
 }    
