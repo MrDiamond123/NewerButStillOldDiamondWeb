@@ -6,7 +6,7 @@ var userAnswer;
 var readableProblem;
 
 
-function getReadableProblem(problemA) {
+var getReadableProblem = function getReadableProblem(problemA) {
    if (problemA = 1) {
     return "+"   
  } else if (problemA = 2) {
@@ -19,7 +19,7 @@ function getReadableProblem(problemA) {
 }
 
 
-function getAnswer(dice1, dice2, problem) {
+var getAnswer = function getAnswer(dice1, dice2, problem) {
     if (problem = 1) {
       answer = dice1 + dice2;
       return answer;
@@ -39,14 +39,14 @@ function getAnswer(dice1, dice2, problem) {
   
 }
 
-function setProblem() {
+var setProblem = function setProblem() {
   dice1 = Math.floor(Math.random() * 6) + 1;
   dice2 = Math.floor(Math.random() * 6) + 1;
   problem = Math.floor(Math.random() * 3) + 1;
   return 0;
 }
 
-function askProblem() {
+var askProblem = function askProblem() {
     userAnswer = prompt("What is" + dice1 + getReadableProblem(problem) + dice2 + "?");
     if (userAnswer = answer) {
         alert("Good Job!");
@@ -60,7 +60,7 @@ function askProblem() {
 }    
 
 
-function doAllThings() {
+var doAllThings = function doAllThings() {
   setProblem();
   askProblem();
     
