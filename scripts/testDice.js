@@ -39,12 +39,14 @@ var getAnswer = function getAnswer(dice1, dice2, problem) {
   
 }
 
-var setProblem = function setProblem() {
+function setProblem() {
   dice1 = Math.floor(Math.random() * 6) + 1;
   dice2 = Math.floor(Math.random() * 6) + 1;
   problem = Math.floor(Math.random() * 3) + 1;
   return 0;
 }
+
+var setProblem = function setProblem();
 
 function askProblem() {
     userAnswer = prompt("What is" + dice1 + getReadableProblem(problem) + dice2 + "?");
@@ -64,5 +66,4 @@ var askProblem = function askProblem();
 var doAllThings = function doAllThings() {
   setProblem();
   askProblem();
-    
 }
