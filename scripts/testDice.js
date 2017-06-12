@@ -62,6 +62,6 @@ function askProblem() {
 
 function doAllThings() {
   setProblem();
-  askProblem():
+  askProblem();
     
 }
