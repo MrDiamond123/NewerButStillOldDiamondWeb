@@ -8,13 +8,13 @@ var readableProblem;
 
 var getReadableProblem = function getReadableProblem(problemA) {
    if (problemA = 1) {
-    return "+"   
+    return "+";
  } else if (problemA = 2) {
-    return "-" 
+    return "-";
  } else if (problemA = 3) {
-    return "*"
+    return "*";
  } else if (problemA = 4) {
-    return "/" 
+    return "/";
  }
 }
 
