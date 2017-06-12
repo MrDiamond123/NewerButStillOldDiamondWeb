@@ -48,7 +48,7 @@ var setProblem = function setProblem() {
 
 var askProblem = function askProblem() {
     userAnswer = prompt("What is" + dice1 + getReadableProblem(problem) + dice2 + "?");
-    if (userAnswer = answer) {
+    if (parseInt(userAnswer) = answer) {
         alert("Good Job!");
         setProblem();
         return 0;
