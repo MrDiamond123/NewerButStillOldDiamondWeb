@@ -59,6 +59,7 @@ function askProblem() {
     }
 }    
 
+var askProblem = function askProblem();
 
 var doAllThings = function doAllThings() {
   setProblem();
