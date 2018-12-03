@@ -46,7 +46,6 @@ function setProblem() {
   return 0;
 }
 
-var setProblem = function setProblem();
 
 function askProblem() {
     userAnswer = prompt("What is" + dice1 + getReadableProblem(problem) + dice2 + "?");
@@ -61,9 +60,8 @@ function askProblem() {
     }
 }    
 
-var askProblem = function askProblem();
 
-var doAllThings = function doAllThings() {
+function doAllThings() {
   setProblem();
   askProblem();
 }
