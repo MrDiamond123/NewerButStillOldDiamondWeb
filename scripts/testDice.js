@@ -50,7 +50,7 @@ function setProblem() {
 function askProblem() {
     userAnswer = prompt("What is" + dice1 + getReadableProblem(problem) + dice2 + "?");
     
-    if (userAnswer == answer.toString()) {
+    if (userAnswer == answer.toString(); ) {
         alert("Good Job!");
         setProblem();
         return 0;
