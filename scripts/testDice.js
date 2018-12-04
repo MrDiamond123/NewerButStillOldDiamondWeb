@@ -49,7 +49,7 @@ function setProblem() {
 
 function askProblem() {
     userAnswer = prompt("What is" + dice1 + getReadableProblem(problem) + dice2 + "?");
-    getAnswer();
+    getAnswer(dice1, dice2, problem);
     stringedAnswer = answer.toString();
     if (userAnswer == stringedAnswer) {
         alert("Good Job!");
