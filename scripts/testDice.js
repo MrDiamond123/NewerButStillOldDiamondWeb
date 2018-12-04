@@ -4,7 +4,7 @@ var problem;
 var answer;
 var userAnswer;
 var readableProblem;
-
+var stringedAnswer;
 
 var getReadableProblem = function getReadableProblem(problemA) {
    if (problemA = 1) {
@@ -49,8 +49,8 @@ function setProblem() {
 
 function askProblem() {
     userAnswer = prompt("What is" + dice1 + getReadableProblem(problem) + dice2 + "?");
-    
-    if (userAnswer == answer.toString(); ) {
+    stringedAnswer = answer.toString();
+    if (userAnswer == stringedAnswer) {
         alert("Good Job!");
         setProblem();
         return 0;
