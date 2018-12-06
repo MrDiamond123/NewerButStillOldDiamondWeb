@@ -1,7 +1,7 @@
 var dice1; //1st Dice Value
 var dice2; //2nd Dice Value
 var problem; 
-var answer;
+var getAnswer;
 var userAnswer;
 var readableProblem;
 var stringedAnswer;
@@ -18,26 +18,28 @@ var getReadableProblem = function getReadableProblem(problemA) {
  }
 }
 
+function getProblem(){
+  return problem;  
+}
 
-var getAnswer = function getAnswer(dice1, dice2, problem) {
+
+var getAnswer  = function getAnswer(dice1, dice2, problem) {
     if (problem = 1) {
-      answer = dice1 + dice2;
-      return answer;
+      return dice1 + dice2;
     }
     if (problem = 2) {
-      answer = dice1 - dice2;
-      return answer;
+      return dice1 - dice2;
     }
     if (problem = 3) {
-      answer = dice1 * dice2;
-      return answer;
+      return dice1 * dice2;
     }
     if (problem = 4) {
-      answer = dice1 / dice2;
-      return answer;
+      return dice1 / dice2;
     }
   
 }
+
+
 
 function setProblem() {
   dice1 = Math.floor(Math.random() * 6) + 1;
@@ -50,7 +52,7 @@ function setProblem() {
 function askProblem() {
     userAnswer = prompt("What is" + dice1 + getReadableProblem(problem) + dice2 + "?");
     getAnswer(dice1, dice2, problem);
-    stringedAnswer = answer.toString();
+    stringedAnswer = getAnswer.toString();
     if (userAnswer == stringedAnswer) {
         alert("Good Job!");
         setProblem();
