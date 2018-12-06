@@ -23,7 +23,7 @@ function getProblem(){
 }
 
 
-var getAnswer  = function getAnswer(dice1, dice2, problem) {
+function getAnswer(dice1, dice2, problem) {
     if (problem = 1) {
       return dice1 + dice2;
     }
@@ -52,7 +52,7 @@ function setProblem() {
 function askProblem() {
     userAnswer = prompt("What is" + dice1 + getReadableProblem(problem) + dice2 + "?");
     getAnswer(dice1, dice2, problem);
-    stringedAnswer = getAnswer.toString();
+    stringedAnswer = getAnswer(dice1, dice2, problem).toString();
     if (userAnswer == stringedAnswer) {
         alert("Good Job!");
         setProblem();
