@@ -6,14 +6,14 @@ var userAnswer;
 var readableProblem;
 var stringedAnswer;
 
-var getReadableProblem = function getReadableProblem(problemA) {
-   if (problemA = 1) {
+function getReadableProblem(problem) {
+if (problem = 1) {
     return "+";
- } else if (problemA = 2) {
+ } else if (problem = 2) {
     return "-";
- } else if (problemA = 3) {
+ } else if (problem = 3) {
     return "*";
- } else if (problemA = 4) {
+ } else if (problem = 4) {
     return "/";
  }
 }
