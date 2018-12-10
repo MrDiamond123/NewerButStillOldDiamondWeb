@@ -10,6 +10,7 @@ function getReadableProblem(problem) {
 if (problem = 1) {
     return "+";
  } else if (problem = 2) {
+     
     return "-";
  } else if (problem = 3) {
     return "*";
@@ -39,7 +40,6 @@ function getAnswer(dice1, dice2, problem) {
       return dice1 * dice2;
     }
     if (problem = 4) {
-        if( dice1 % dice2 == dice1 % dice2 
       return dice1 / dice2;
     }
   
