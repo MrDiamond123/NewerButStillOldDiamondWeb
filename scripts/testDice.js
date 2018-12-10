@@ -7,14 +7,14 @@ var readableProblem;
 var stringedAnswer;
 
 function getReadableProblem(problem) {
-if (problem = 1) {
+if (problem == 1) {
     return "+";
- } else if (problem = 2) {
+ } else if (problem == 2) {
      
     return "-";
- } else if (problem = 3) {
+ } else if (problem == 3) {
     return "*";
- } else if (problem = 4) {
+ } else if (problem == 4) {
     return "/";
  }
 }
@@ -25,10 +25,10 @@ function getProblem(){
 
 
 function getAnswer(dice1, dice2, problem) {
-    if (problem = 1) {
+    if (problem == 1) {
       return dice1 + dice2;
     }
-    if (problem = 2) {
+    if (problem == 2) {
         if (dice1 < dice2) {
          return dice2 - dice1;   
         }
@@ -36,10 +36,10 @@ function getAnswer(dice1, dice2, problem) {
       return dice1 - dice2;
         }
     }
-    if (problem = 3) {
+    if (problem == 3) {
       return dice1 * dice2;
     }
-    if (problem = 4) {
+    if (problem == 4) {
       return dice1 / dice2;
     }
   
