@@ -24,24 +24,11 @@ function getProblem(){
 
 
 function getAnswer(dice1, dice2, problem) {
-    if (problem == 1) {
-      return dice1 + dice2;
-    }
-    if (problem == 2) {
-        if (dice1 < dice2) {
-         return dice2 - dice1;   
-        }
-        else {
-      return dice1 - dice2;
-        }
-    }
-    if (problem == 3) {
-      return dice1 * dice2;
-    }
-    if (problem == 4) {
-      return dice1 / dice2;
-    }
-  
+         if (problem == 1) { return dice1 + dice2; }
+    else if (problem == 2) { return dice1 - dice2; }
+    else if (problem == 3) { return dice1 * dice2; }
+    else if (problem == 4) { return dice1 / dice2; }
+    else                   { return 0; }
 }
 
 
@@ -52,16 +39,6 @@ function setProblem() {
   problem = Math.floor(Math.random() * 3) + 1;
   return 0;
 }
-
-
-
-function getHumanProblem(dice1, dice2, problem) {
-    
-    
-    
-    
-}
-
 
 
 function askProblem() {
