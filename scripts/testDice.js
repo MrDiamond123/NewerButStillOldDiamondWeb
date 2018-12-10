@@ -3,14 +3,13 @@ var dice2; //2nd Dice Value
 var problem; 
 var getAnswer;
 var userAnswer;
-var readableProblem;
+var readableOperation;
 var stringedAnswer;
 
-function getReadableProblem(problem) {
+function getReadableOperation (problem) {
 if (problem == 1) {
     return "+";
  } else if (problem == 2) {
-     
     return "-";
  } else if (problem == 3) {
     return "*";
@@ -55,8 +54,19 @@ function setProblem() {
 }
 
 
+
+function getHumanProblem(dice1, dice2, problem) {
+    
+    
+    
+    
+}
+
+
+
 function askProblem() {
-    userAnswer = prompt("What is" + dice1 + getReadableProblem(problem) + dice2 + "?");
+   
+    userAnswer = prompt("What is" + dice1 + getReadableOperation(problem) + dice2 + "?");
     getAnswer(dice1, dice2, problem);
     stringedAnswer = getAnswer(dice1, dice2, problem).toString();
     if (userAnswer == stringedAnswer) {
