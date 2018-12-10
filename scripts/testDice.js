@@ -28,12 +28,18 @@ function getAnswer(dice1, dice2, problem) {
       return dice1 + dice2;
     }
     if (problem = 2) {
+        if (dice1 < dice2) {
+         return dice2 - dice1;   
+        }
+        else {
       return dice1 - dice2;
+        }
     }
     if (problem = 3) {
       return dice1 * dice2;
     }
     if (problem = 4) {
+        if( dice1 % dice2 == dice1 % dice2 
       return dice1 / dice2;
     }
   
@@ -55,11 +61,9 @@ function askProblem() {
     stringedAnswer = getAnswer(dice1, dice2, problem).toString();
     if (userAnswer == stringedAnswer) {
         alert("Good Job!");
-        setProblem();
         return 0;
     } else {
       alert("You will get it next time!");
-      setProblem();
       return 1;
     }
 }    
