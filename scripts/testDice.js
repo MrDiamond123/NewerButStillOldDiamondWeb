@@ -5,6 +5,10 @@ var getAnswer;
 var userAnswer;
 var readableOperation;
 var stringedAnswer;
+var wrongAnswer = "Sorry, your answer was wrong.";
+var rightAnswer = "Congrats, your answer was right!";
+
+
 
 function getReadableOperation (problem) {
 if (problem == 1) {
@@ -15,6 +19,8 @@ if (problem == 1) {
     return "*";
  } else if (problem == 4) {
     return "/";
+ } else {
+    console.log("ERROR: INVALID PROBLEM (getReadableOperation)");
  }
 }
 
@@ -41,17 +47,29 @@ function setProblem() {
 }
 
 
-function askProblem() {
-   
-    userAnswer = prompt("What is" + dice1 + getReadableOperation(problem) + dice2 + "?");
-    getAnswer(dice1, dice2, problem);
+function confirmAnswer() {
     stringedAnswer = getAnswer(dice1, dice2, problem).toString();
     if (userAnswer == stringedAnswer) {
-        alert("Good Job!");
-        return 0;
+        console.log("ANSWER: CORRECT");
+        return 1;
     } else {
-      alert("You will get it next time!");
-      return 1;
+        console.log("ANSWER: WRONG")
+        return 0;
+    }
+}
+    
+ 
+
+
+
+function askProblem() {
+    userAnswer = prompt("What is" + dice1 + getReadableOperation(problem) + dice2 + "?");
+    if (confirmAnswer()) {
+        alert(rightAnswer);
+        return 1;
+    } else {
+        alert(wrongAnswer);
+        return 0;
     }
 }    
 
