@@ -1,12 +1,15 @@
 var dice1; //1st Dice Value
 var dice2; //2nd Dice Value
 var problem; 
+
 var getAnswer;
 var userAnswer;
 var readableOperation;
 var stringedAnswer;
+
 var wrongAnswer = "Sorry, your answer was wrong.";
 var rightAnswer = "Congrats, your answer was right!";
+var questionText = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
 
 
 
@@ -57,13 +60,27 @@ function confirmAnswer() {
         return 0;
     }
 }
-    
+ 
+function confirmGenProblem() {
+    userAnswer = document.getElementById("htmlAnswer");
+ if (confirmAnswer()) {
+     setProblem();
+     alert(rightAnswer);
+     document.getElementById("htmlProblem").innerHTML = questionText;
+     return 1;
+ } else {
+     alert(wrongAnswer);
+     return 0;
+ }
+   
+
+}
  
 
 
 
 function askProblem() {
-    userAnswer = prompt("What is" + dice1 + getReadableOperation(problem) + dice2 + "?");
+    userAnswer = prompt(questionText);
     if (confirmAnswer()) {
         alert(rightAnswer);
         return 1;
