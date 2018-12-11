@@ -50,6 +50,12 @@ function setProblem() {
 }
 
 
+function getQuestionText() {
+    var questionText = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
+    return questionText;
+}
+
+
 function confirmAnswer() {
     stringedAnswer = getAnswer(dice1, dice2, problem).toString();
     if (userAnswer == stringedAnswer) {
@@ -80,6 +86,7 @@ function confirmGenProblem() {
 
 
 function askProblem() {
+    getQuestionText();
     userAnswer = prompt(questionText);
     if (confirmAnswer()) {
         alert(rightAnswer);
