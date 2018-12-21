@@ -98,7 +98,7 @@ function askProblem() {
 }    
 
 
-function doAllThings() {
+function alertProblem() {
   setProblem();
   askProblem();
 }
