@@ -72,7 +72,7 @@ function confirmGenProblem() {
  if (confirmAnswer()) {
      setProblem();
      alert(rightAnswer);
-     document.getElementById("htmlProblem").innerHTML = questionText;
+     document.getElementById("htmlProblem").innerHTML = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
      return 1;
  } else {
      alert(wrongAnswer);
@@ -87,7 +87,7 @@ function confirmGenProblem() {
 
 function askProblem() {
     getQuestionText();
-    userAnswer = prompt(questionText);
+    userAnswer = prompt("What is" + dice1 + getReadableOperation(problem) + dice2 + "?");
     if (confirmAnswer()) {
         alert(rightAnswer);
         return 1;
