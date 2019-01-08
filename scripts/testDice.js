@@ -110,6 +110,6 @@ function alertProblem() {
 
 //SETUP FOR HTML
 setProblem();
-document.getElementById("htmlQuestion").innerHTML = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
+document.getElementById("htmlQuestion").innerHTML = "What is" + dice1 + " " + getReadableOperation(problem) + dice2 + "?";
 
 
