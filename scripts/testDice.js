@@ -12,6 +12,10 @@ var rightAnswer = "Congrats, your answer was right!";
 var questionText = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
 
 
+//SETUP
+
+
+
 
 function getReadableOperation (problem) {
 if (problem == 1) {
@@ -68,7 +72,7 @@ function confirmAnswer() {
 }
  
 function confirmGenProblem() {
-    userAnswer = document.getElementById("htmlAnswer");
+    userAnswer = document.getElementById("htmlAnswer").value;
  if (confirmAnswer()) {
      setProblem();
      alert(rightAnswer);
@@ -102,3 +106,10 @@ function alertProblem() {
   setProblem();
   askProblem();
 }
+
+
+//SETUP FOR HTML
+setProblem();
+document.getElementById("htmlProblem").innerHTML = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
+
+
