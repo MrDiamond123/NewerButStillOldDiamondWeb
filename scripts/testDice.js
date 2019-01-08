@@ -77,6 +77,7 @@ function confirmGenProblem() {
      setProblem();
      alert(rightAnswer);
      document.getElementById("htmlQuestion").innerHTML = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
+     userAnswer = 0;
      return 1;
  } else {
      alert(wrongAnswer);
