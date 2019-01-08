@@ -76,7 +76,7 @@ function confirmGenProblem() {
  if (confirmAnswer()) {
      setProblem();
      alert(rightAnswer);
-     document.getElementById("htmlProblem").innerHTML = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
+     document.getElementById("htmlQuestion").innerHTML = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
      return 1;
  } else {
      alert(wrongAnswer);
@@ -110,6 +110,6 @@ function alertProblem() {
 
 //SETUP FOR HTML
 setProblem();
-document.getElementById("htmlProblem").innerHTML = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
+document.getElementById("htmlQuestion").innerHTML = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
 
 
