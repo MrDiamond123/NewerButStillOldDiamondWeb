@@ -11,9 +11,18 @@ var wrongAnswer = "Sorry, your answer was wrong.";
 var rightAnswer = "Congrats, your answer was right!";
 var questionText = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
 
+var input = document.getElementById("htmlAnswer");
 
 //SETUP
-
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("myBtn").click();
+  }
+});
 
 
 
@@ -72,7 +81,7 @@ function confirmAnswer() {
 }
  
 function confirmGenProblem() {
-    userAnswer = document.getElementById("htmlAnswer").value;
+    userAnswer = input.value;
  if (confirmAnswer()) {
      setProblem();
      alert(rightAnswer);
@@ -83,8 +92,6 @@ function confirmGenProblem() {
      alert(wrongAnswer);
      return 0;
  }
-   
-
 }
  
 
