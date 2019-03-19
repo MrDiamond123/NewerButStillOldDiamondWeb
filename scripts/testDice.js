@@ -9,7 +9,7 @@ var stringedAnswer;
 
 var wrongAnswer = "Sorry, your answer was wrong.";
 var rightAnswer = "Congrats, your answer was right!";
-var questionText = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
+var questionText = " ";
 
 var input = document.getElementById("htmlAnswer");
 
@@ -20,7 +20,7 @@ input.addEventListener("keyup", function(event) {
     // Cancel the default action, if needed
     event.preventDefault();
     // Trigger the button element with a click
-    document.getElementById("myBtn").click();
+    document.getElementById("button").click();
   }
 });
 
@@ -28,13 +28,13 @@ input.addEventListener("keyup", function(event) {
 
 function getReadableOperation (problem) {
 if (problem == 1) {
-    return "+";
+    return " + ";
  } else if (problem == 2) {
-    return "-";
+    return " - ";
  } else if (problem == 3) {
-    return "*";
+    return " * ";
  } else if (problem == 4) {
-    return "/";
+    return " / ";
  } else {
     console.log("ERROR: INVALID PROBLEM (getReadableOperation)");
  }
@@ -59,6 +59,7 @@ function setProblem() {
   dice1 = Math.floor(Math.random() * 6) + 1;
   dice2 = Math.floor(Math.random() * 6) + 1;
   problem = Math.floor(Math.random() * 3) + 1;
+  questionText = "What is " + dice1 + getReadableOperation(problem) + dice2 + "?";
   return 0;
 }
 
@@ -85,13 +86,15 @@ function confirmGenProblem() {
  if (confirmAnswer()) {
      setProblem();
      alert(rightAnswer);
-     document.getElementById("htmlQuestion").innerHTML = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
+     document.getElementById("htmlQuestion").innerHTML = questionText;
      userAnswer = 0;
+     input.value = ' ';
      return 1;
  } else {
      alert(wrongAnswer);
      return 0;
  }
+  
 }
  
 
