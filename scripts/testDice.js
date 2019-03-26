@@ -75,10 +75,10 @@ function confirmAnswer() {
 function displayAnswerThing(boolean) {
   if (boolean) {
    answerThing.innerHTML = rightAnswer; 
-   answerThing.style.color = green;
+   answerThing.style.color = "green";
   } else {
    answerThing.innerHTML = wrongAnswer; 
-   answerThing.style.color = red;
+   answerThing.style.color = "red";
   }
 }
 
