@@ -74,9 +74,9 @@ function confirmAnswer() {
  
 function displayAnswerThing(boolean) {
   if(boolean) {
-   answerThing.innerHTML = rightanswer; 
+   answerThing.innerHTML = rightAnswer; 
   } else {
-   answerThing.innerHTML = wronganswer; 
+   answerThing.innerHTML = wrongAnswer; 
   }
 }
 
