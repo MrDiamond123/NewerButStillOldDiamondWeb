@@ -87,8 +87,6 @@ function confirmGenProblem() {
  if (confirmAnswer()) {
      //Reset The Problem
      setProblem();
-     //Temp Alert System
-     alert(rightAnswer);
      //Change to the new problem
      document.getElementById("htmlQuestion").innerHTML = questionText;
      //Reset old answer
@@ -98,7 +96,6 @@ function confirmGenProblem() {
      displayAnswerThing(true);
      return 1;
  } else {
-     alert(wrongAnswer);
      displayAnswerThing(false);
      return 0;
  }
