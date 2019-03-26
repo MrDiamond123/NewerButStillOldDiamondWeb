@@ -73,7 +73,7 @@ function confirmAnswer() {
 }
  
 function displayAnswerThing(boolean) {
-  if(boolean) {
+  if (boolean) {
    answerThing.innerHTML = rightAnswer; 
   } else {
    answerThing.innerHTML = wrongAnswer; 
@@ -83,19 +83,25 @@ function displayAnswerThing(boolean) {
 function confirmGenProblem() {
     userAnswer = input.value;
  if (confirmAnswer()) {
+     //Reset The Problem
      setProblem();
+     //Temp Alert System
      alert(rightAnswer);
+     //Change to the new problem
      document.getElementById("htmlQuestion").innerHTML = questionText;
+     //Reset old answer
      userAnswer = 0;
      input.value = ' ';
+     //New answer thing
+     displayAnswerThing(true);
      return 1;
  } else {
      alert(wrongAnswer);
+     displayAnswerThing(false);
      return 0;
  }
   
-  displayAnswerThing(boolean);
-  
+ 
 }
  
 
