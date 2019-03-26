@@ -12,18 +12,9 @@ var rightAnswer = "Congrats, your answer was right!";
 var questionText = " ";
 
 var input = document.getElementById("htmlAnswer");
+var answerThing = document.getElementById("answerThing");
 
 //SETUP
-input.addEventListener("keyup", function(event) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    document.getElementById("button").click();
-  }
-});
-
 
 
 function getReadableOperation (problem) {
@@ -65,7 +56,7 @@ function setProblem() {
 
 
 function getQuestionText() {
-    var questionText = "What is" + dice1 + getReadableOperation(problem) + dice2 + "?";
+    var questionText = "What is " + dice1 + getReadableOperation(problem) + dice2 + "?";
     return questionText;
 }
 
@@ -81,6 +72,14 @@ function confirmAnswer() {
     }
 }
  
+function displayAnswerThing(boolean) {
+  if(boolean) {
+   answerThing.innerHTML = rightanswer; 
+  } else {
+   answerThing.innerHTML = wronganswer; 
+  }
+}
+
 function confirmGenProblem() {
     userAnswer = input.value;
  if (confirmAnswer()) {
@@ -94,6 +93,8 @@ function confirmGenProblem() {
      alert(wrongAnswer);
      return 0;
  }
+  
+  displayAnswerThing(boolean);
   
 }
  
@@ -119,8 +120,17 @@ function alertProblem() {
 }
 
 
+
 //SETUP FOR HTML
 setProblem();
-document.getElementById("htmlQuestion").innerHTML = "What is" + dice1 + " " + getReadableOperation(problem) + dice2 + "?";
+document.getElementById("htmlQuestion").innerHTML = "What is " + dice1 + " " + getReadableOperation(problem) + dice2 + "?";
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    confirmGenProblem();
+  }
+});
 
 
