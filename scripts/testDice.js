@@ -106,13 +106,9 @@ function confirmGenProblem() {
      displayCorrectRight();
      return 1;
  } else {
-     if (userAnswer == ' ') {
-         return 0;
-     }
      displayAnswerThing(false);
      return 0;
  }
-  
  
 }
  
