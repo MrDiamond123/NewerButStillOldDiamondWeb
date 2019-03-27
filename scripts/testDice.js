@@ -15,7 +15,7 @@ var input = document.getElementById("htmlAnswer");
 var answerThing = document.getElementById("answerThing");
 
 var amountRight = 0;
-var amountRightDisplay = document.getElementByID("amountRight");
+var amountRightDisplay = document.getElementById("amountRight");
 var amountRightText = "Correct Answers: ";
 
 //SETUP
