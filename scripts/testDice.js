@@ -102,7 +102,7 @@ function confirmGenProblem() {
      input.value = ' ';
      //New answer thing
      displayAnswerThing(true);
-     correctRight = correctRight + 1;
+     amountRight = amountRight + 1;
      displayCorrectRight();
      return 1;
  } else {
