@@ -14,8 +14,11 @@ var questionText = " ";
 var input = document.getElementById("htmlAnswer");
 var answerThing = document.getElementById("answerThing");
 
-//SETUP
+var amountRight = 0;
+var amountRightDisplay = document.getElementByID("amountRight");
+var amountRightText = "Correct Answers: ";
 
+//SETUP
 
 function getReadableOperation (problem) {
 if (problem == 1) {
@@ -82,6 +85,11 @@ function displayAnswerThing(boolean) {
   }
 }
 
+function displayCorrectRight() {
+    amountRightDisplay.innerHTML = amountRightText + amountRight;
+}
+
+
 function confirmGenProblem() {
     userAnswer = input.value;
  if (confirmAnswer()) {
@@ -94,6 +102,8 @@ function confirmGenProblem() {
      input.value = ' ';
      //New answer thing
      displayAnswerThing(true);
+     correctRight = correctRight + 1;
+     displayCorrectRight();
      return 1;
  } else {
      if (userAnswer == ' ') {
