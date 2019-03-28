@@ -1,4 +1,8 @@
-button {
+.button {
  background-color: blue;
  color: black;
+ border: 0;
+ background: none;
+ box-shadow: none;
+ border-radius: 0px;
 }
