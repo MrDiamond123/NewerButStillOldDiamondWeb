@@ -18,6 +18,10 @@ var amountRight = 0;
 var amountRightDisplay = document.getElementById("amountRight");
 var amountRightText = "Correct Answers: ";
 
+var correctStreak = 0;
+var correctStreakDisplay = document.getElementById("correctStreak");
+var correctStreakText = "Current Streak: ";
+
 //SETUP
 
 function getReadableOperation (problem) {
@@ -88,6 +92,9 @@ function displayAnswerThing(boolean) {
 function displayCorrectRight() {
     amountRightDisplay.innerHTML = amountRightText + amountRight;
 }
+function displayCorrectStreak() {
+    correctStreakDisplay.innerHTML = correctStreakText + correctStreak;   
+}    
 
 
 function confirmGenProblem() {
@@ -103,10 +110,13 @@ function confirmGenProblem() {
      //New answer thing
      displayAnswerThing(true);
      amountRight = amountRight + 1;
+     correctStreak = correctStreak + 1;
      displayCorrectRight();
+     displayCorrectStreak();
      return 1;
  } else {
      displayAnswerThing(false);
+     correctStreak = 0;
      return 0;
  }
  
