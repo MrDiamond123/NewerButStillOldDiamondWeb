@@ -125,8 +125,8 @@ function confirmGenProblem() {
      return 1;
  } else {
      displayAnswerThing(false);
-     displayCorrectStreak();
      correctStreak = 0;
+     displayCorrectStreak();
      return 0;
  }
  
