@@ -102,20 +102,30 @@ function confirmGenProblem() {
  if (confirmAnswer()) {
      //Reset The Problem
      setProblem();
+     
      //Change to the new problem
      document.getElementById("htmlQuestion").innerHTML = questionText;
+     
      //Reset old answer
      userAnswer = 0;
      input.value = ' ';
-     //New answer thing
+     
+     //Tell user that the answer was correct
      displayAnswerThing(true);
+     
+     //Change the amount right counter
      amountRight = amountRight + 1;
+     
+     //Change the correct streak counter
      correctStreak = correctStreak + 1;
+     
+     //Display amount right and correct streak
      displayCorrectRight();
      displayCorrectStreak();
      return 1;
  } else {
      displayAnswerThing(false);
+     displayCorrectStreak();
      correctStreak = 0;
      return 0;
  }
