@@ -17,16 +17,29 @@
   
   <body>    
     <div style="background-color: dimgray; margin-left: 10px; font-family: 'Roboto Mono';">
+      <h1>Random Math Problem Generator</h1>
       <div style="margin-left: 10px;">
-      <h1 style="font-family: 'Titillium Web', sans-serif;"> Solve a problem </h1>
-      <p id="htmlQuestion" style="font-family: 'Roboto', sans-serif;"> </p>
-      <p id="answerThing" style="font-family: 'Roboto Mono', monospace">[This is where you see if you were correct or not!]</p>
-      <input type="number" name= "userAnswer" id="htmlAnswer" style="font-family: 'Roboto', sans-serif;">
-      <button type="button" onclick="confirmGenProblem();" id="htmlButton">Check</button>
-    </div>
+        <h2 style="font-family: 'Titillium Web', sans-serif;">Solve a problem!</h2>
+        <p id="htmlQuestion" style="font-family: 'Roboto', sans-serif;"> </p>
+        <p id="answerThing" style="font-family: 'Roboto Mono', monospace">[This is where you see if you were correct or not!]</p>
+        <input type="number" name="userAnswer" id="htmlAnswer" style="font-family: 'Roboto', sans-serif;">
+        <button type="button" onclick="confirmGenProblem();" id="htmlButton">Check</button>
+      </div>
        <div style="background-color: lightgrey;">
         <p id="amountRight">[This is where you see how many problems you got right (if any)]</p>
         <p id="correctStreak">[This is where you see your current correct answers streak]</p>
+      </div>
+      <div>
+        <h2>Change the settings</h2>
+        
+        <input type="checkbox" name="sameMinProblem" id="sameMinProblem">
+        <input type="checkbox" name="sameMaxProblem" id="sameMaxProblem">
+        
+        <input type="number" name="minProblem1" id="minProblem1">
+        <input type="number" name="maxProblem1" id="maxProblem1">
+        
+        <input type="number" name="minProblem2" id="minProblem2">
+        <input type="number" name="maxProblem2" id="maxProblem2">
       </div>
     </div>
 
