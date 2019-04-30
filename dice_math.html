@@ -32,22 +32,11 @@
       <div>
         <h2>Change the settings</h2>
         
-        <p>Same Minimal Value for both parts of the problem?</p>
-        <input type="checkbox" name="sameMinProblem" id="sameMinProblem">
-        <p>Max as well?</p>
-        <input type="checkbox" name="sameMaxProblem" id="sameMaxProblem">
+        <p>Set the minimal amount for integers</p>
+        <input type="number" name="minProblem" id="minProblem">
+        <p>Set the maximium amount for integers</p>
+        <input type="number" name="maxProblem" id="maxProblem">
         
-        <p>Set the minimal amount for the first integer</p>
-        <input type="number" name="minProblem1" id="minProblem1">
-        <p>Set the maximium amount for the first integer</p>
-        <input type="number" name="maxProblem1" id="maxProblem1">
-        
-        <p>Set the minimal amount for the second integer</p>
-        <input type="number" name="minProblem2" id="minProblem2">
-        <p>Set the maximium amount for the second integer</p>
-        <input type="number" name="maxProblem2" id="maxProblem2">
-        
-        <p> Change to default options </p>
         <button type="button" onclick="resetSettings();" id="resetButton">Reset Settings</button>
         <button type="button" onclick="changeSettings();" id="changeButton">Change Settings</button>
 
