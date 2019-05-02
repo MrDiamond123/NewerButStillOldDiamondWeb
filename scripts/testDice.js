@@ -169,6 +169,10 @@ function resetSettings () {
    
  correctStreak = 0;
  amountRight = 0;
+  
+ setProblem();
+ document.getElementById("htmlQuestion").innerHTML = "What is " + dice1 + " " + getReadableOperation(problem) + dice2 + "?";
+
 }
 
 function changeSettings () {
@@ -177,6 +181,8 @@ function changeSettings () {
     correctStreak = 0;
     amountRight = 0;
     setProblem();
+    document.getElementById("htmlQuestion").innerHTML = "What is " + dice1 + " " + getReadableOperation(problem) + dice2 + "?";
+
 }
 
 //SETUP FOR HTML
