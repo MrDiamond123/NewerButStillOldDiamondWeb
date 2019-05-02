@@ -61,9 +61,9 @@ function getAnswer(dice1, dice2, problem) {
 
 
 function setProblem() {
-  dice1 = Math.floor(Math.random() * 6) + 1;
-  dice2 = Math.floor(Math.random() * 6) + 1;
-  problem = Math.floor(Math.random() * (max - min + 1) ) + min;
+  dice1 = Math.floor(Math.random() * (max - min + 1) ) + min;
+  dice2 = Math.floor(Math.random() * (max - min + 1) ) + min;
+  problem = Math.floor(Math.random() * 3) + 1;
   questionText = "What is " + dice1 + getReadableOperation(problem) + dice2 + "?";
   return 0;
 }
