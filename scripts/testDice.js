@@ -1,3 +1,10 @@
+
+var max;
+var min;
+
+var dmax = 6;
+var dmin = 0;
+
 var dice1; //1st Dice Value
 var dice2; //2nd Dice Value
 var problem; 
@@ -56,7 +63,7 @@ function getAnswer(dice1, dice2, problem) {
 function setProblem() {
   dice1 = Math.floor(Math.random() * 6) + 1;
   dice2 = Math.floor(Math.random() * 6) + 1;
-  problem = Math.floor(Math.random() * 3) + 1;
+  problem = Math.floor(Math.random() * (max - min + 1) ) + min;
   questionText = "What is " + dice1 + getReadableOperation(problem) + dice2 + "?";
   return 0;
 }
@@ -153,9 +160,27 @@ function alertProblem() {
   askProblem();
 }
 
+function resetSettings () {
+ max = dmax;
+ min = dmin;
+    
+ document.getElementById("maxProblem").value = dmax;
+ document.getElementById("minProblem").value = dmin;
+   
+ correctStreak = 0;
+ amountRight = 0;
+}
 
+function changeSettings () {
+    var max = document.getElementById("maxProblem").value;
+    var min = document.getElementById("minProblem").value;
+    correctStreak = 0;
+    amountRight = 0;
+    setProblem();
+}
 
 //SETUP FOR HTML
+resetSettings();
 setProblem();
 document.getElementById("htmlQuestion").innerHTML = "What is " + dice1 + " " + getReadableOperation(problem) + dice2 + "?";
 input.addEventListener("keyup", function(event) {
