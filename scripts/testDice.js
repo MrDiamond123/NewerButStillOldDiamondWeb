@@ -58,7 +58,9 @@ function getAnswer(dice1, dice2, problem) {
     else                   { return 0; }
 }
 
-
+function resetText() {  
+  document.getElementById("htmlQuestion").innerHTML = "What is " + dice1 + " " + getReadableOperation(problem) + dice2 + "?";
+}
 
 function setProblem() {
   dice1 = Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -171,24 +173,23 @@ function resetSettings () {
  amountRight = 0;
   
  setProblem();
- document.getElementById("htmlQuestion").innerHTML = "What is " + dice1 + " " + getReadableOperation(problem) + dice2 + "?";
+ document.getElementById("htmlQuestion").innerHTML = questionText;
 
 }
 
 function changeSettings () {
-    var max = document.getElementById("maxProblem").value;
-    var min = document.getElementById("minProblem").value;
+    max = document.getElementById("maxProblem").value;
+    min = document.getElementById("minProblem").value;
     correctStreak = 0;
     amountRight = 0;
     setProblem();
-    document.getElementById("htmlQuestion").innerHTML = "What is " + dice1 + " " + getReadableOperation(problem) + dice2 + "?";
-
+    document.getElementById("htmlQuestion").innerHTML = questionText;
 }
 
 //SETUP FOR HTML
 resetSettings();
 setProblem();
-document.getElementById("htmlQuestion").innerHTML = "What is " + dice1 + " " + getReadableOperation(problem) + dice2 + "?";
+document.getElementById("htmlQuestion").innerHTML = questionText;
 input.addEventListener("keyup", function(event) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
